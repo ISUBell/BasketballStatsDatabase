@@ -8,7 +8,7 @@ It allows for any team within the sports reference databases to be added to the 
 
 <h3>Prereqs:</h3>
 <ul>
-<li>Java EE 7</li>
+<li>Java JDK 1.8.x</li>
 <li>Eclipse EE (Kepler or Luna)</li>
 <li>Apache Tomcat 8.0</li>
 </ul>
@@ -16,7 +16,7 @@ It allows for any team within the sports reference databases to be added to the 
 <h3>To run locally:</h3>
 <ul>
 <li>Clone repo to local drive</li>
-<li>Install with Maven</li>
+<li>clean Install with Maven</li>
 <li>Run as server with Apache Tomcat 8.0</li>
-<li>You do not need any local database setup, the app will automatically connect to the live database</li>
+<li>You do not need any local database setup, the app will automatically connect to the cloud database</li>
 </ul>
