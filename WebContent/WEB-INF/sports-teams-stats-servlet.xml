@@ -20,7 +20,6 @@
 	<!-- Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
 
-
 	<!-- Define Spring MVC view resolver -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -32,9 +31,10 @@
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://sql9.freesqldatabase.com:3306/sql9179453?useSSL=false" />
-        <property name="user" value="sql9179453" />
-        <property name="password" value="FRiEJkY7bJ" /> 
+        <property name="jdbcUrl" value="jdbc:mysql://sql9.freesqldatabase.com:3306/sql9181613?useSSL=false" />
+        <property name="user" value="sql9181613" />
+        <property name="password" value="XQ1ZfFr1ye" />
+
 
         <!-- these are connection pool properties for C3P0 -->
         <property name="minPoolSize" value="5" />

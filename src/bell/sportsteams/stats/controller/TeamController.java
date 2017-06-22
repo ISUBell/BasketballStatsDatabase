@@ -3,6 +3,8 @@ package bell.sportsteams.stats.controller;
 import java.net.MalformedURLException;
 import java.util.List;
 
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,6 +28,9 @@ public class TeamController {
 	@Autowired
 	private StatsService statsService;
 	
+	//logger for log4j
+	private Logger logger = Logger.getLogger(TeamController.class);
+	
 	
 	/**
 	 * get the list of teams and display the list-teams veiw
@@ -35,6 +40,7 @@ public class TeamController {
 	@GetMapping("/list")
 	public String listTeams(Model theModel) {
 		
+		logger.info("Inside listTeams");
 		// get teams from the service layer
 		List<Team> theTeams = statsService.getTeams();
 		
